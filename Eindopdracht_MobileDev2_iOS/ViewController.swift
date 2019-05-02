@@ -9,58 +9,43 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    
+    var series = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon") {
             
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                
                 if let receivedData = data {
-                    Swift.print("\(receivedData)")
+                    Swift.print("hier \(receivedData)")
                     
                     do {
-                        // Optie 1: Gebruik JSONSerialization
                         
-//                        if let json = try JSONSerialization.jsonObject(with: receivedData) as? [String:Any] {
-//                            Swift.print("\(json)")
-//
-//                            var temperatureInKelvin : NSMeasurement?
-//
-//                            if let main = json["main"] as? [String:Any],
-//                                let temperature = main["temp"] as? Double
-//                            {
-//                                temperatureInKelvin = NSMeasurement(doubleValue:  temperature, unit: UnitTemperature.kelvin)
-//                            }
+                        let pokemonData = try JSONDecoder().decode(AllPokemon.self, from: receivedData)
                         
-                            // Optie 2: Gebruik Codable protocol
-                            let decoder = JSONDecoder()
-                            let pokemonData = try decoder.decode(PokemonData.self, from: receivedData)
+                        print(pokemonData.results)
+                        
+                        pokemonData.results.forEach { d in
+                            let name = String(d.name ?? "")
+                            self.series.append(name)
                             
-                            temperatureInKelvin = NSMeasurement(doubleValue: weatherData.main.temp, unit: UnitTemperature.kelvin)
-                            
-                            // convert temperature to celsius
-                            if let temperatureInCelsius =  temperatureInKelvin?.converting(to: UnitTemperature.celsius).value {
-                                
-                                DispatchQueue.main.async {
-                                    self.temperatureLabel.text = "\(temperatureInCelsius.round(toNumberOfDigits: 1))"
-                                }
-                            }
                         }
+                        
+                        self.tableView.reloadData();
                     } catch { }
+                    
                 }
-            
-            
-            
             }
             
-              task.resume()
+            task.resume()
         }
-
     }
-
     
-    var series = ["Rick and morty", "House of cards", "Breaking bad"]
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return series.count
@@ -74,8 +59,12 @@ class ViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let details = segue.destination as? DetailController {
-
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
+            details.pokemonname = (currentCell.textLabel!.text ?? "def")
+            
         }
     }
-
+    
 }
