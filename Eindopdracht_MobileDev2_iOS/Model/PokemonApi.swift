@@ -12,13 +12,18 @@ struct results : Codable{
 
     
 struct pokemonDetail : Codable {
-    var abilities : [ability]
-    var base_experience : String?
-    var height : String?
-    var moves: [Moves]?
-    var weight : String?
+//    var abilities : [ability]?
+    var base_experience : Int?
+    var height : Int?
+    //var moves: [Moves]?
+    var weight : Int?
+    var sprites : sprites?
 }
 
+
+struct sprites : Codable{
+    var front_default: String?
+}
 struct ability : Codable {
     var name: String?
 }

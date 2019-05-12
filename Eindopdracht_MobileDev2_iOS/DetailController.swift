@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailController: UIViewController {
+class DetailController:  UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,49 +17,67 @@ class DetailController: UIViewController {
         nameLabel.text = pokemonname
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(pokemonname)") {
             
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                
-                if let receivedData = data {
-                    Swift.print("deze shit\(receivedData)")
+            let task = URLSession.shared.dataTask(with: url) { data, response, err in
+                DispatchQueue.main.async {
                     
-                    do {
-                        
-                        let pokemonData = try JSONDecoder().decode(pokemonDetail.self, from: receivedData)
-                        
-//                        print(pokemonData.abilities)
-//
-//                        pokemonData.results.forEach { d in
-//                            let name = String(d.name ?? "")
-//                            self.series.append(name)
-                        
-                        
-//                        pokemonData.abilities.forEach({ ab in
-//                           self.abilitiesLabel.text = ab.name
-//                        })
-                        
-                        print(pokemonData.height)
-                        
-//                        self.heightLabel.text = pokemonData.height
-//                        self.weightLabel.text = pokemonData.weight
-                        
-//                        self.abilitiesLabel.reloadInputViews()
-//                        self.heightLabel.reloadInputViews()
-//                        self.weightLabel.reloadInputViews()
-//
                     
-                    } catch { }
+
+                    if let err  = err {
+                        print("failed to get data from url:" ,err)
+                        return
+                    }
                     
+                    if let receivedData = data{
+                        
+                        do{
+                        
+                            let pokemonData = try JSONDecoder().decode(pokemonDetail.self, from: receivedData)
+                            
+                            
+                            let session = URLSession(configuration: .default)
+
+                            if let sprite = pokemonData.sprites?.front_default{
+                                
+                                let url = URL(string: sprite)
+                                let data = try Data(contentsOf: url!)
+                                
+                                let i = UIImage(data: data)
+                            
+//                                self.image.image = i;
+                                if let loadedImage = i {
+                                    
+                                    print(" blabla\(self.pokemonImage.image)")
+                                    self.pokemonImage.image = loadedImage
+                                }
+                            }
+                    
+                            if let height = pokemonData.height{
+                                self.heightLabel.text = String(height)
+                            }
+                            
+                            if let weight = pokemonData.weight{
+                                self.weightLabel.text = String(weight)
+                            }
+                            
+                            if let base_experience = pokemonData.base_experience{
+                                self.experienceLabel.text = String(base_experience)
+                            }
+                            
+                            
+                            
+                            
+                        }catch{
+                            
+                        }
+                    }
                 }
             }
-            
             task.resume()
         }
         
-        
-        
-        
     }
     
+
     @IBOutlet weak var experienceLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -73,7 +91,7 @@ class DetailController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     
     var pokemonname: String = " "
+
     
-    
-    
+    @IBOutlet weak var pokemonImage: UIImageView!
 }

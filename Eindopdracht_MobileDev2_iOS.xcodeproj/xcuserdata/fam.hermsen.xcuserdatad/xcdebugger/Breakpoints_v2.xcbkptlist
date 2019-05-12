@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.918015"
+            timestampString = "579367450.974445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.918092"
+            timestampString = "579367450.974517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.918149"
+            timestampString = "579367450.97457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -89,24 +89,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918203"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.918274"
+            timestampString = "579367450.974619"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -122,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.918326"
+            timestampString = "579367450.9746619"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -138,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918377"
+            timestampString = "579367450.974712"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -154,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.91844"
+            timestampString = "579367450.974805"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -170,182 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.9185539"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918613"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918668"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918723"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.918779"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Eindopdracht_MobileDev2_iOS.DetailController.viewDidLoad() -&gt; ()"
-                  moduleName = "Eindopdracht_MobileDev2_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/DetailController.swift"
-                  timestampString = "578504377.960196"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1320">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Eindopdracht_MobileDev2_iOS.DetailController.viewDidLoad() -&gt; ()"
-                  moduleName = "Eindopdracht_MobileDev2_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/DetailController.swift"
-                  timestampString = "578504377.962623"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1542">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Eindopdracht_MobileDev2_iOS.DetailController.viewDidLoad() -&gt; ()"
-                  moduleName = "Eindopdracht_MobileDev2_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/DetailController.swift"
-                  timestampString = "578504377.965149"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1566">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
-            timestampString = "578504377.918834"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "pokemonDetail"
-            landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.919265"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.9193341"
+            timestampString = "579367450.97486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -389,11 +198,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
-            timestampString = "578504377.91939"
+            timestampString = "579367450.9749399"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -402,34 +211,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Eindopdracht_MobileDev2_iOS.DetailController.viewDidLoad() -&gt; ()"
                   moduleName = "Eindopdracht_MobileDev2_iOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/DetailController.swift"
-                  timestampString = "578504377.975404"
+                  timestampString = "579264499.275429"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
-                  offsetFromSymbolStart = "1099">
+                  offsetFromSymbolStart = "752">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Eindopdracht_MobileDev2_iOS.DetailController.viewDidLoad() -&gt; ()"
                   moduleName = "Eindopdracht_MobileDev2_iOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/DetailController.swift"
-                  timestampString = "578504377.977371"
+                  timestampString = "579264499.27797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
                   endingLineNumber = "22"
-                  offsetFromSymbolStart = "225">
+                  offsetFromSymbolStart = "221">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -441,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
-            timestampString = "578504377.919443"
+            timestampString = "579367450.975023"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -453,11 +262,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
-            timestampString = "578504377.9194911"
+            timestampString = "579367450.975073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
@@ -469,17 +278,241 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
-            timestampString = "578504377.919749"
+            timestampString = "579367450.975135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "ability"
             landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
+            timestampString = "579367450.975191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/ViewController.swift"
+            timestampString = "579367450.9752721"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+            timestampString = "579367450.97532"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "pokemonDetail"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init() -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579291113.130421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init(from: Swift.Decoder) throws -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579291113.132503"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+            timestampString = "579367450.975372"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "pokemonDetail"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init() -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579291121.471138"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init(from: Swift.Decoder) throws -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579291121.473582"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+            timestampString = "579367450.975425"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "AllPokemon"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
+            timestampString = "579367450.97548"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+            timestampString = "579367450.9755419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "pokemonDetail"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init() -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579343441.5894769"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eindopdracht_MobileDev2_iOS.pokemonDetail.init(from: Swift.Decoder) throws -&gt; Eindopdracht_MobileDev2_iOS.pokemonDetail"
+                  moduleName = "Eindopdracht_MobileDev2_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fam.hermsen/Desktop/Eindopdracht_MobileDev2_iOS/Eindopdracht_MobileDev2_iOS/Model/PokemonApi.swift"
+                  timestampString = "579343441.591554"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "170">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eindopdracht_MobileDev2_iOS/DetailController.swift"
+            timestampString = "579367450.975595"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
