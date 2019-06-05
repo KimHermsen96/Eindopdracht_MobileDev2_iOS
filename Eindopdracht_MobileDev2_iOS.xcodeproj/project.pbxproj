@@ -17,6 +17,7 @@
 		40BB8A0B2279FDCD00077FCF /* pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB8A0A2279FDCD00077FCF /* pokemon.swift */; };
 		40BB8A0D227A1DE300077FCF /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB8A0C227A1DE300077FCF /* DetailController.swift */; };
 		40BB8A10227A2E2700077FCF /* PokemonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB8A0F227A2E2700077FCF /* PokemonApi.swift */; };
+		B955E9C422A7B6D000FD61E8 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B955E9C322A7B6D000FD61E8 /* FavoritesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		40BB8A0A2279FDCD00077FCF /* pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemon.swift; sourceTree = "<group>"; };
 		40BB8A0C227A1DE300077FCF /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		40BB8A0F227A2E2700077FCF /* PokemonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonApi.swift; sourceTree = "<group>"; };
+		B955E9C322A7B6D000FD61E8 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				40BB89E12279E38C00077FCF /* Assets.xcassets */,
 				40BB89E32279E38C00077FCF /* LaunchScreen.storyboard */,
 				40BB89E62279E38C00077FCF /* Info.plist */,
+				B955E9C322A7B6D000FD61E8 /* FavoritesTableViewController.swift */,
 			);
 			path = Eindopdracht_MobileDev2_iOS;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				40BB8A0D227A1DE300077FCF /* DetailController.swift in Sources */,
 				40BB8A0B2279FDCD00077FCF /* pokemon.swift in Sources */,
 				40BB8A10227A2E2700077FCF /* PokemonApi.swift in Sources */,
+				B955E9C422A7B6D000FD61E8 /* FavoritesTableViewController.swift in Sources */,
 				40BB8A092279ED7400077FCF /* ViewController.swift in Sources */,
 				40BB89DB2279E38B00077FCF /* AppDelegate.swift in Sources */,
 			);

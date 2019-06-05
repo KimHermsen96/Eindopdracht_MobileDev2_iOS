@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var series = [String]()
+    private var series = [String]()
+    private var locationPokemon = IndexPath()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,11 @@ class ViewController: UITableViewController {
                         
                         print(pokemonData.results)
                         
+                        
                         pokemonData.results.forEach { d in
                             let name = String(d.name ?? "")
                             self.series.append(name)
-                            
+            
                         }
                         
                         self.tableView.reloadData();
@@ -57,6 +59,35 @@ class ViewController: UITableViewController {
         return cell
     }
     
+
+    override func tableView(_ tableView: UITableView,
+                            trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+        ->   UISwipeActionsConfiguration? {
+            
+            let add = UIContextualAction(style: .normal, title: "Add") { (action, view , nil) in
+ 
+                self.locationPokemon = indexPath
+                
+                // self.performSegue(withIdentifier: "FavoriteSegue", sender: self)
+        
+                
+                var favoritesViewController: FavoritesTableViewController = FavoritesTableViewController(nibName: nil, bundle: nil)
+                
+                
+                let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
+                print(currentCell.textLabel!.text)
+//                favoritesViewController.favoriteList.append(currentCell.textLabel!.text ?? "def" )
+                favoritesViewController.addFavorite(name: currentCell.textLabel!.text ?? "def" )
+               
+        
+            }
+            return UISwipeActionsConfiguration (actions: [add])
+    }
+    
+
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let details = segue.destination as? DetailController {
             
@@ -64,6 +95,17 @@ class ViewController: UITableViewController {
             let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
             details.pokemonname = (currentCell.textLabel!.text ?? "def")
             
+        }
+        
+        if segue.identifier == "FavoriteSegue" {
+        if let favorites =  segue.destination as? FavoritesTableViewController{
+            
+    
+
+            let currentCell = tableView.cellForRow(at: locationPokemon )! as UITableViewCell
+            print(currentCell.textLabel!.text)
+            favorites.favoriteList.append(currentCell.textLabel!.text ?? "def" )
+            }
         }
     }
     
