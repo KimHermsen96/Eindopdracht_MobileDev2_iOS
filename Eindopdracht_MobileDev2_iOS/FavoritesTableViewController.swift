@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
+import CoreData
 class FavoritesTableViewController: UITableViewController {
 	
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        retrieveData()
     }
 	
     public var favoriteList:[String] = []
@@ -28,63 +29,67 @@ class FavoritesTableViewController: UITableViewController {
         return cell
     }
     
-    func addFavorite(name: String){
-        favoriteList.append(name)
+    override func tableView(_ tableView: UITableView,
+                            trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+        ->   UISwipeActionsConfiguration? {
+            
+            let delete = UIContextualAction(style: .normal, title: "Delete") { (action, view , nil) in
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+                
+                let managedContext = appDelegate.persistentContainer.viewContext
+                
+                let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
+                
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoritePokemon")
+                fetchRequest.predicate = NSPredicate(format: "name = %@", currentCell.textLabel!.text!)
+                
+                do{
+                    let object = try managedContext.fetch(fetchRequest)
+                    let objectToDelete = object[0] as! NSManagedObject
+                    managedContext.delete(objectToDelete)
+                    
+                    do{
+                        try managedContext.save()
+                        
+                        if let index = self.favoriteList.firstIndex(of: currentCell.textLabel!.text!) {
+                            self.favoriteList.remove(at: index)
+                        }
+                        
+                        self.tableView.reloadData();
+                    }catch{
+                        print(error)
+                    }
+                }catch{
+                    print(error)
+                }
+                
+                
+            }
+            return UISwipeActionsConfiguration (actions: [delete])
     }
-  
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    
+    
+    func retrieveData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoritePokemon")
+        
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result as! [NSManagedObject] {
+                favoriteList.append(data.value(forKey: "name") as! String)
+            }
+        }catch{
+            print("Failed")
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    func deleteData(){
+        
+        
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

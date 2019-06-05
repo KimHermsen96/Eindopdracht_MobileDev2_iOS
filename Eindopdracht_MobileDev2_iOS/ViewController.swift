@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UITableViewController {
     
@@ -65,20 +66,27 @@ class ViewController: UITableViewController {
         ->   UISwipeActionsConfiguration? {
             
             let add = UIContextualAction(style: .normal, title: "Add") { (action, view , nil) in
- 
-                self.locationPokemon = indexPath
-                
-                // self.performSegue(withIdentifier: "FavoriteSegue", sender: self)
-        
-                
-                var favoritesViewController: FavoritesTableViewController = FavoritesTableViewController(nibName: nil, bundle: nil)
-                
-                
+                //Container is stored in the appdelegate
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+                //create context for the container
+                let managedContext = appDelegate.persistentContainer.viewContext
+                //Create entitty for new objects
+                let favoriteEntity = NSEntityDescription.entity(forEntityName: "FavoritePokemon", in: managedContext)
+                //Get the swiped row
                 let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
-                print(currentCell.textLabel!.text)
-//                favoritesViewController.favoriteList.append(currentCell.textLabel!.text ?? "def" )
-                favoritesViewController.addFavorite(name: currentCell.textLabel!.text ?? "def" )
-               
+            
+                
+                let object = NSManagedObject(entity: favoriteEntity!, insertInto: managedContext)
+                  
+                object.setValue(currentCell.textLabel!.text, forKey: "name")
+                
+                do{
+                    try managedContext.save()
+                    
+                }catch let error as NSError {
+                    print("Could not save. \(error), \(error.userInfo)")
+                }
+             
         
             }
             return UISwipeActionsConfiguration (actions: [add])
@@ -97,16 +105,6 @@ class ViewController: UITableViewController {
             
         }
         
-        if segue.identifier == "FavoriteSegue" {
-        if let favorites =  segue.destination as? FavoritesTableViewController{
-            
-    
-
-            let currentCell = tableView.cellForRow(at: locationPokemon )! as UITableViewCell
-            print(currentCell.textLabel!.text)
-            favorites.favoriteList.append(currentCell.textLabel!.text ?? "def" )
-            }
-        }
     }
     
 }
