@@ -33,28 +33,31 @@ class FavoritesTableViewController: UITableViewController {
                             trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
         ->   UISwipeActionsConfiguration? {
             
+            //setUp delete from favorites
             let delete = UIContextualAction(style: .normal, title: "Delete") { (action, view , nil) in
+                //Container is stored in the app delegate
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-                
+                //setup context for the container
                 let managedContext = appDelegate.persistentContainer.viewContext
-                
+                //get current row
                 let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
-                
+                //setup the fetch request
                 let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoritePokemon")
                 fetchRequest.predicate = NSPredicate(format: "name = %@", currentCell.textLabel!.text!)
                 
                 do{
+                    //try deleting the object
                     let object = try managedContext.fetch(fetchRequest)
                     let objectToDelete = object[0] as! NSManagedObject
                     managedContext.delete(objectToDelete)
                     
                     do{
                         try managedContext.save()
-                        
+                        //Remove the pokemon from the favoritelist
                         if let index = self.favoriteList.firstIndex(of: currentCell.textLabel!.text!) {
                             self.favoriteList.remove(at: index)
                         }
-                        
+                        //reload tableview
                         self.tableView.reloadData();
                     }catch{
                         print(error)
@@ -71,6 +74,7 @@ class FavoritesTableViewController: UITableViewController {
     
     
     func retrieveData(){
+        //setup retrieve call
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -78,6 +82,7 @@ class FavoritesTableViewController: UITableViewController {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FavoritePokemon")
         
         do {
+            //add all of the results to the favoritelist
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
                 favoriteList.append(data.value(forKey: "name") as! String)
@@ -86,10 +91,17 @@ class FavoritesTableViewController: UITableViewController {
             print("Failed")
         }
     }
-    func deleteData(){
-        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //prepare if the destination is detailscontroller send pokemon name
+        if let details = segue.destination as? DetailController {
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
+            details.pokemonname = (currentCell.textLabel!.text ?? "def")
+            
+        }
         
     }
-
-
+    
 }

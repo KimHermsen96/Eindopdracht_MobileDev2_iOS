@@ -32,10 +32,7 @@ class DetailController:  UIViewController {
                         do{
                         
                             let pokemonData = try JSONDecoder().decode(pokemonDetail.self, from: receivedData)
-                            
-                            
-                            let session = URLSession(configuration: .default)
-
+ 
                             if let sprite = pokemonData.sprites?.front_default{
                                 
                                 let url = URL(string: sprite)
@@ -46,7 +43,6 @@ class DetailController:  UIViewController {
 //                                self.image.image = i;
                                 if let loadedImage = i {
                                     
-                                    print(" blabla\(self.pokemonImage.image)")
                                     self.pokemonImage.image = loadedImage
                                 }
                             }

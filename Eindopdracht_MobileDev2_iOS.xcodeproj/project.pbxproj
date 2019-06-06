@@ -107,7 +107,6 @@
 		40BB89D92279E38B00077FCF /* Eindopdracht_MobileDev2_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C8858D6E22A7F15000D1B61A /* FavoriteDataModel.xcdatamodeld */,
 				40BB8A0E227A27E800077FCF /* Model */,
 				40BB8A0A2279FDCD00077FCF /* pokemon.swift */,
 				40BB89DA2279E38B00077FCF /* AppDelegate.swift */,
@@ -143,6 +142,7 @@
 		40BB8A0E227A27E800077FCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8858D6E22A7F15000D1B61A /* FavoriteDataModel.xcdatamodeld */,
 				40BB8A0F227A2E2700077FCF /* PokemonApi.swift */,
 			);
 			path = Model;

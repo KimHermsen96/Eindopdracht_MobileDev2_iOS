@@ -12,10 +12,10 @@ struct results : Codable{
 
     
 struct pokemonDetail : Codable {
-//    var abilities : [ability]?
+    var abilities : [ability]?
     var base_experience : Int?
     var height : Int?
-    //var moves: [Moves]?
+    var moves: [Moves]?
     var weight : Int?
     var sprites : sprites?
 }

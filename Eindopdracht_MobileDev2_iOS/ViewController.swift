@@ -75,7 +75,7 @@ class ViewController: UITableViewController {
                 //Get the swiped row
                 let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
             
-                
+                //Create object for saving value
                 let object = NSManagedObject(entity: favoriteEntity!, insertInto: managedContext)
                   
                 object.setValue(currentCell.textLabel!.text, forKey: "name")
@@ -97,6 +97,7 @@ class ViewController: UITableViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if destination is detailcontroller set pokemon name in controller
         if let details = segue.destination as? DetailController {
             
             let indexPath = tableView.indexPathForSelectedRow!
