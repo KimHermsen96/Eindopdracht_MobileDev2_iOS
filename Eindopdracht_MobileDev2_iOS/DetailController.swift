@@ -8,20 +8,38 @@
 
 import UIKit
 
-class DetailController:  UIViewController {
+class DetailController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    private var abilities = [String]()
+    
+   
+    
+    @IBOutlet weak var experienceLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    
+    var pokemonname: String = " "
+
+    @IBOutlet weak var pokemonImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         nameLabel.text = pokemonname
+        loadData();
+        
+        
+    }
+    func loadData(){
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(pokemonname)") {
             
             let task = URLSession.shared.dataTask(with: url) { data, response, err in
                 DispatchQueue.main.async {
                     
-                    
-
                     if let err  = err {
                         print("failed to get data from url:" ,err)
                         return
@@ -30,23 +48,31 @@ class DetailController:  UIViewController {
                     if let receivedData = data{
                         
                         do{
-                        
+                            
                             let pokemonData = try JSONDecoder().decode(pokemonDetail.self, from: receivedData)
- 
+                            
                             if let sprite = pokemonData.sprites?.front_default{
                                 
                                 let url = URL(string: sprite)
                                 let data = try Data(contentsOf: url!)
                                 
                                 let i = UIImage(data: data)
-                            
-//                                self.image.image = i;
+                                
                                 if let loadedImage = i {
                                     
                                     self.pokemonImage.image = loadedImage
                                 }
                             }
-                    
+                            if let abilities = pokemonData.abilities{
+                                abilities.forEach{ res in
+                                    self.abilities.append(res.ability.name)
+                                    
+                            
+                                }
+                                
+                            }
+                            
+                            
                             if let height = pokemonData.height{
                                 self.heightLabel.text = String(height)
                             }
@@ -59,8 +85,7 @@ class DetailController:  UIViewController {
                                 self.experienceLabel.text = String(base_experience)
                             }
                             
-                            
-                            
+                            self.tableView.reloadData();
                             
                         }catch{
                             
@@ -70,24 +95,15 @@ class DetailController:  UIViewController {
             }
             task.resume()
         }
-        
     }
     
-
-    @IBOutlet weak var experienceLabel: UILabel!
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return abilities.count;
+    }
     
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    @IBOutlet weak var abilitiesLabel: UILabel!
-    
-    @IBOutlet weak var attackLabel: UILabel!
-    
-    @IBOutlet weak var weightLabel: UILabel!
-    
-    @IBOutlet weak var heightLabel: UILabel!
-    
-    var pokemonname: String = " "
-
-    
-    @IBOutlet weak var pokemonImage: UIImageView!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "abilityCell", for:indexPath)
+        cell.textLabel?.text = abilities[indexPath.row]
+        return cell
+    }
 }

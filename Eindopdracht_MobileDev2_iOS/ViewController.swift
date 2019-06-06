@@ -16,39 +16,47 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData();
         
+       
+    }
+    
+    func loadData(){
         if let url = URL(string: "https://pokeapi.co/api/v2/pokemon") {
             
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 
                 if let receivedData = data {
                     Swift.print("hier \(receivedData)")
+                    var pokemonDataOptional: AllPokemon?
                     
                     do {
                         
-                        let pokemonData = try JSONDecoder().decode(AllPokemon.self, from: receivedData)
+                        pokemonDataOptional = try JSONDecoder().decode(AllPokemon.self, from: receivedData)
                         
-                        print(pokemonData.results)
-                        
-                        
-                        pokemonData.results.forEach { d in
-                            let name = String(d.name ?? "")
-                            self.series.append(name)
-            
+                    } catch {
+                        print("parsing failed")
+                    }
+                    
+                    if let pokemonData = pokemonDataOptional {
+                        DispatchQueue.main.async {
+                            pokemonData.results.forEach { d in
+                                let name = String(d.name)
+                                self.series.append(name)
+                                self.tableView.reloadData();
+                            }
                         }
-                        
-                        self.tableView.reloadData();
-                    } catch { }
+                    }
                     
                 }
+                
             }
             
             task.resume()
+            
         }
+        
     }
-    
-    
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return series.count
