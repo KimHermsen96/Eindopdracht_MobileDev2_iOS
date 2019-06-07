@@ -12,9 +12,7 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
     
     
     private var abilities = [String]()
-    
    
-    
     @IBOutlet weak var experienceLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -66,7 +64,6 @@ class DetailController:  UIViewController, UITableViewDataSource, UITableViewDel
                             if let abilities = pokemonData.abilities{
                                 abilities.forEach{ res in
                                     self.abilities.append(res.ability.name)
-                                    
                             
                                 }
                                 

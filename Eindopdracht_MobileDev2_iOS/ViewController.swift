@@ -17,8 +17,6 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData();
-        
-       
     }
     
     func loadData(){
@@ -78,7 +76,7 @@ class ViewController: UITableViewController {
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
                 //create context for the container
                 let managedContext = appDelegate.persistentContainer.viewContext
-                //Create entitty for new objects
+                //Create entity for new objects
                 let favoriteEntity = NSEntityDescription.entity(forEntityName: "FavoritePokemon", in: managedContext)
                 //Get the swiped row
                 let currentCell = tableView.cellForRow(at: indexPath )! as UITableViewCell
